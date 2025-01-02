@@ -78,88 +78,159 @@ Day 12: CSS Grid
 • Topics Covered: Introduction to CSS Grid for two-dimensional layouts.
 
 • Activities: Built a grid layout for my portfolio page.
-Week 3: Java Basics
+Week 3: Php Basics
+. Installation
 
-Day 13: Introduction to Java
+To get started with PHP, you need to have a server environment. You can set up PHP on your local machine using software stacks like:
 
-• Topics Covered: What is Java? Setting up the development environment (IDE).
+• XAMPP: Includes Apache, MySQL, and PHP.
 
-• Activities: Installed Java and wrote my first "Hello World" program.
+• MAMP: Mac-specific, includes Apache, MySQL, and PHP.
 
-• Reflection: Excited to learn about programming fundamentals!
+• WAMP: Windows-specific, includes Apache, MySQL, and PHP.
 
-Day 14: Java Variables and Data Types
+. Basic Syntax
 
-• Topics Covered: Variables, data types, and operators in Java.
-Week 3: Introduction to Photoshop Basics
-
-Day 15: Getting Started with Photoshop
-
-• Topics Covered: Introduction to the interface, tools, and workspace.
-
-• Activities: Explored the toolbar and created a new document.
-
-Day 16: Basic Tools and Functions
-
-• Topics Covered: Selection tools (Marquee, Lasso, Quick Selection).
-
-• Activities: Practiced using selection tools on sample images.
-
-Day 17: Working with Layers
-
-• Topics Covered: Introduction to layers, layer types, and layer management.
-
-• Activities: Created multiple layers and learned how to hide/show them.
-Day 18: Review and Testing
-
-• Activities: Reviewed progress; tested functionalities developed so far.
-
-• Reflection: Testing is essential before moving forward. I need to fix any bugs before adding more features.
+• PHP code is embedded in HTML using the <?php ... ?> tags.
+  
+<?php
+echo "Hello, World!";
+?>
 
 
-Week 4: Design and User Experience
+• The echo statement is used to output text to the browser.
 
-Day 19: Designing UI Elements
+3. Variables
 
-• Goals: Create consistent UI elements (buttons, forms, icons).
+• Variables in PHP start with the $ sign followed by the variable name.
 
-• Activities: Designed UI components using design tools or CSS frameworks (e.g., Bootstrap).
+$name = "John";
+$age = 30;
+echo "My name is $name and I am $age years old.";
+4. Data Types
 
-Day 20: Responsive Design Implementation
+PHP supports several data types:
 
-• Goals: Ensure the website is mobile-friendly.
+• String: Text enclosed in quotes.
 
-• Activities: Used media queries to make the site responsive across devices.
+• Integer: Whole numbers.
 
-Day 21: Adding Product Images and Descriptions
+• Float: Decimal numbers.
 
-• Goals: Upload product images and write descriptions.
+• Boolean: true or false.
 
-• Activities: Gathered high-quality images and wrote SEO-friendly descriptions.
-Day 22: Implementing Analytics
+• Array: A collection of values.
 
-• Goals: Set up Google Analytics or other tracking tools.
+• Object: An instance of a class.
 
-• Activities: Integrated analytics code into the website to track user behavior.
+• NULL: A variable with no value.
 
-Day 23: Customer Reviews and Ratings Feature
+5. Control Structures
 
-• Goals: Add functionality for customer reviews/ratings on products.
+Conditional Statements
 
-• Activities: Developed a review system allowing users to leave feedback.
+if ($age >= 18) {
+    echo "You are an adult.";
+} else {
+    echo "You are a minor.";
+}
+Loops
 
-Day 24: Review and Final Touches
+• For Loop
 
-• Activities: Reviewed design elements; made final adjustments based on feedback testing.
-SEO Optimization
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
 
-• Goals: Optimize website for search engines.
 
-• Activities: Added meta tags, alt text for images, and optimized URLs.
-Day 25:To create websites
-to create a admin dashboard for user and admin login
-after that add cloth list, category list
-Day 26:
+• While Loop
+
+$i = 0;
+while ($i < 5) {
+    echo $i;
+    $i++;
+}
+week-4
+6. Functions
+
+Functions are reusable blocks of code. You can define a function using the function keyword.
+
+function greet($name) {
+    return "Hello, $name!";
+}
+
+echo greet("Alice");
+
+
+7. Arrays
+
+PHP supports both indexed and associative arrays.
+
+Indexed Array
+
+$fruits = array("Apple", "Banana", "Cherry");
+echo $fruits[1]; // Outputs: Banana
+
+
+Associative Array
+$person = array("name" => "John", "age" => 30);
+echo $person["name"]; // Outputs: John
+
+
+▎8. Superglobals
+
+PHP has several built-in superglobal arrays that are accessible from any scope:
+
+• $_GET: Used to collect data sent in the URL query string.
+
+• $_POST: Used to collect data sent via HTTP POST method.
+
+• $_SESSION: Used to store session variables.
+
+• $_COOKIE: Used to retrieve cookie variables.
+
+9. File Handling
+
+PHP provides functions to handle files, such as reading from and writing to files.
+
+$file = fopen("example.txt", "w");
+fwrite($file, "Hello, World!");
+fclose($file);
+
+
+10. Database Interaction
+
+PHP often interacts with databases using extensions like MySQLi or PDO.
+
+$mysqli = new mysqli("localhost", "user", "password", "database");
+ #Check connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+
+$result = $mysqli->query("SELECT * FROM users");
+while ($row = $result->fetch_assoc()) {
+    echo $row['username'];
+}
+$mysqli->close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
