@@ -36,8 +36,6 @@ Day 5: Multimedia in HTML
 
 • Activities: Added a video and audio player to my webpage.
 
-• Reflection: Multimedia can make websites more engaging.
-
 Day 6: Review and Practice
 
 • Activities: Reviewed all topics covered this week and practiced building a personal webpage.
@@ -177,11 +175,12 @@ $person = array("name" => "John", "age" => 30);
 echo $person["name"]; // Outputs: John
 
 
-▎8. Superglobals
+8. Superglobals
 
 PHP has several built-in superglobal arrays that are accessible from any scope:
 
 • $_GET: Used to collect data sent in the URL query string.
+Start with project
 
 • $_POST: Used to collect data sent via HTTP POST method.
 
@@ -213,6 +212,132 @@ while ($row = $result->fetch_assoc()) {
     echo $row['username'];
 }
 $mysqli->close();
+ Continue with project Working
+ LOGIN PHP
+ ?php
+include 'inc/header.php';
+
+$info = "";
+
+
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = md5($_POST['password']);
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username and password= :password");
+    $stmt->bindParam(':username', $username);
+    $stmt->bindParam(':password', $password);
+    $stmt->execute();
+    $stmt->rowCount();
+
+    if ($stmt->rowCount() > 0) {
+      $user = $stmt->fetch(PDO::FETCH_ASSOC);
+      $_SESSION['username'] = $user['username'];
+      $_SESSION['role'] = $user['role'];
+
+      echo "<script>alert('Logged In'); window.location='admin-dashboard/index.php'; </script>";
+    } else {
+      $info = "Invalid User";
+    }
+ 
+}
+
+
+?>
+</div>
+<!-- end hero area -->
+
+<!-- contact section -->
+
+<section class="contact_section layout_padding">
+
+  <div class="container container-bg1">
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-md-6 col-lg-5 px-0">
+        <h2>
+          Login
+        </h2>
+        <form action="" method="post">
+          <?php echo $info; ?>
+          <div>
+            <input type="text" class="form-control" name="username" placeholder="User Name" required>
+          </div>
+          <div>
+            <input type="password" class="form-control" name="password" placeholder="Password" required>
+          </div>
+          
+          <div class="d-flex ">
+            <button type="submit" name="submit">
+              LOGIN
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end contact section -->
+
+<!-- info section -->
+<?php
+include 'inc/footer.php';
+?>
+DATABASE USED FOR GIFTOS WINIPEG
+CREATE TABLE `about_web` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `description` varchar(1000) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `about_web`
+--
+
+INSERT INTO `about_web` (`id`, `title`, `description`, `phone`, `email`) VALUES
+(2, 'Welcome to our gifto website', 'Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.', '1234567899', 'gifto@gmail.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE `categories` (
+  `category_id` int(11) DEFAULT NULL,
+  `category_name` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`category_id`, `category_name`) VALUES
+(1, 'Mens'),
+(2, 'Womens'),
+(3, 'Kids'),
+(4, 'New Arrival');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `giftositems`
+--
+
+CREATE TABLE `giftositems` (
+  `giftos_item_id` int(11) DEFAULT NULL,
+  `itemname` varchar(255) DEFAULT NULL,
+  `description` varchar(1000) DEFAULT NULL,
+  `price` int(11) DEFAULT NULL,
+  `category` varchar(255) DEFAULT NULL,
+  `slug` varchar(255) DEFAULT NULL,
+  `created_dt` date DEFAULT NULL,
+  `updated_dt` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
 
 
 
