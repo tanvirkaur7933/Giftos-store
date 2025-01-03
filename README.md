@@ -1,341 +1,173 @@
-# Giftos-Winipeg
-Week 1: HTML Basics
+# 1 MONTH PROJECT ON GIFTOS 
+
+# Day 1: Setting Up the Project
+What I Learned:
+Set up a new project folder structure.
+Created initial files for HTML, CSS, JavaScript, PHP, and SQL.
+Installed the required software (text editor, XAMPP/WAMP, or local server environment).
+What I Did:
+Initialized a GitHub repository for version control.
+Created the initial folder structure (index.html, style.css, etc.).
+Set up the basic layout for the homepage of the website.
+Began sketching out a wireframe for the project.
+# Day 2: Structuring the Homepage
+What I Learned:
+HTML5 semantic tags for page structure.
+Bootstrap grid system to structure the layout.
+Linking external CSS and JavaScript files.
+What I Did:
+Built the header, footer, and navigation bar for the homepage.
+Used Bootstrap’s grid system for responsive design.
+Added some placeholder content to the homepage.
+# Day 3: Adding Basic Styles
+What I Learned:
+How to customize Bootstrap classes using custom CSS.
+CSS media queries for responsiveness.
+What I Did:
+Customized the design using custom CSS.
+Styled buttons, navigation menu, and card elements.
+Applied responsive design so the site looks good on both mobile and desktop.
+# Day 4: JavaScript for Interactivity
+What I Learned:
+Basics of JavaScript: variables, functions, events.
+How to create interactive elements using JavaScript.
+What I Did:
+Implemented a simple script to open/close the mobile navigation menu.
+Added a shopping cart popup using JavaScript.
+Tested the interaction on the homepage.
+# Day 5: Database Setup (MySQL)
+What I Learned:
+How to create a MySQL database and tables.
+Basic SQL commands (SELECT, INSERT, UPDATE, DELETE).
+Setting up PHP to connect to a database.
+What I Did:
+Created the database for the supermarket store (e.g., giftos_store).
+Set up the products table with basic columns (product name, price, stock, etc.).
+Tested the connection to the database with a PHP script.
+# Day 6: Dynamic Product Listings
+What I Learned:
+Fetching data from the MySQL database using PHP.
+Dynamically displaying product information on the website.
+What I Did:
+Created a PHP script to display products dynamically on the homepage.
+Styled the product list with Bootstrap cards.
+Added pagination to the product listings.
+# Day 7: User Authentication (Login/Signup)
+What I Learned:
+Basics of user authentication with PHP and MySQL.
+Password hashing for security.
+Using sessions in PHP to store user login states.
+What I Did:
+Built the login and signup pages with forms.
+Set up user authentication with email and password.
+Added the session logic to keep users logged in.
+# Day 8: Shopping Cart Functionality
+What I Learned:
+How to create and manage a shopping cart with PHP and sessions.
+Adding and removing products from the cart.
+What I Did:
+Implemented the shopping cart functionality.
+Stored cart items in PHP sessions.
+Added the ability to view and remove items from the cart.
+# Day 9: Checkout and Order Placement
+What I Learned:
+Basics of order placement and payment process.
+Handling form data with POST requests.
+Storing order information in the database.
+What I Did:
+Created the checkout page with a form for user details.
+Integrated a simple order confirmation system in the database.
+Set up order status (e.g., pending, completed).
+# Day 10: Product Management Page (Admin Panel)
+What I Learned:
+Creating an admin panel with PHP for product management.
+Basic CRUD operations (Create, Read, Update, Delete) in PHP.
+What I Did:
+Built the admin panel for adding, editing, and deleting products.
+Allowed admin to update product details, including price and stock.
+Styled the admin panel for ease of use.
+# Day 11: Handling Form Validation
+What I Learned:
+Implementing client-side validation with JavaScript.
+Using PHP to validate form data before insertion into the database.
+What I Did:
+Implemented form validation for login/signup forms.
+Added real-time validation using JavaScript.
+Handled server-side validation using PHP.
+# Day 12: Error Handling and Debugging
+What I Learned:
+Using try-catch blocks for error handling in PHP.
+Debugging issues in code using console.log and PHP error logs.
+What I Did:
+Added error handling for database queries and form submissions.
+Implemented a custom error page (404, 500).
+Debugged issues with product display and cart functionality.
+# Day 13: Improving UI/UX
+What I Learned:
+Best practices for UI/UX design.
+Using icons and images to improve the visual appeal of the site.
+What I Did:
+Improved product listing layout and added product images.
+Used Font Awesome icons for buttons and the shopping cart.
+Refined the navigation bar and footer for better usability.
+# Day 14: Optimizing for Performance
+What I Learned:
+Basics of website performance optimization.
+Minification of CSS, JavaScript, and images for faster loading.
+What I Did:
+Minified the CSS and JavaScript files.
+Compressed images to reduce load time.
+Implemented lazy loading for images.
+# Day 15: Testing and Bug Fixing
+What I Learned:
+Techniques for testing a website (functional and usability testing).
+Using browser developer tools to identify issues.
+What I Did:
+Performed testing on all features: login, product display, cart functionality.
+Fixed several bugs related to cart item quantity and checkout process.
+Tested on different browsers (Chrome, Firefox, Edge).
+# Day 16: Mobile Optimization
+What I Learned:
+Responsive design principles.
+Adjusting elements for mobile views.
+What I Did:
+Optimized the website for mobile devices.
+Used Bootstrap's media queries and flexible layout system.
+Ensured that buttons, forms, and images scale appropriately on mobile.
+# Day 17-25: Enhancing Features and Functionality
+What I Learned:
+Integration of additional features like user reviews, product search, etc.
+Using AJAX for smoother user experiences (e.g., updating cart without refreshing).
+What I Did:
+Added product search functionality.
+Implemented a star rating system for products.
+Used AJAX for updating cart quantities without reloading the page.
+# Day 26-28: Finalizing the Admin Panel
+What I Learned:
+Adding additional admin features like order management and customer management.
+What I Did:
+Implemented order tracking in the admin panel.
+Allowed admins to view customer details and order history.
+Added security measures (admin login authentication).
+# Day 29: Preparing for Deployment
+What I Learned:
+How to prepare a website for deployment.
+Backing up the database and files.
+Moving files to a live server.
+What I Did:
+Prepared the project for deployment (removed test data).
+Uploaded files to the hosting server (using FTP or cPanel).
+Verified that all functions worked correctly in the live environment.
+# Day 30: Final Review and Documentation
+What I Learned:
+Documenting the project for GitHub.
+Writing detailed README files for clarity.
 
-Day 1: Introduction to HTML
-
-• Topics Covered: What is HTML? Basic structure of an HTML document.
-
-• Activities: Created a simple HTML page with headings, paragraphs, and lists.
-
-• Reflection: I learned how to structure a webpage using tags like <html>, <head>, and <body>.
-
-Day 2: HTML Elements
-
-• Topics Covered: Common HTML elements (images, links, tables).
-
-• Activities: Added images and hyperlinks to my HTML page.
-
-Day 3: Forms in HTML
-
-• Topics Covered: Creating forms and input elements.
-
-• Activities: Built a contact form with text inputs, radio buttons, and a submit button.
-
-• Reflection: Forms are essential for user interaction; I need to learn more about form validation.
-Day 4: Semantic HTML
-
-• Topics Covered: Importance of semantic elements (<header>, <footer>, <article>, etc.).
-
-• Activities: Refactored my previous HTML page to use semantic tags.
-
-• Reflection: Using semantic tags improves accessibility and SEO.
-
-Day 5: Multimedia in HTML
-
-• Topics Covered: Embedding audio and video.
-
-• Activities: Added a video and audio player to my webpage.
-
-Day 6: Review and Practice
-
-• Activities: Reviewed all topics covered this week and practiced building a personal webpage.
-
-Day 7: Project Day
-
-• Project: Created a simple portfolio page using what I learned in HTML.
-
-Week 2: CSS Basics
-
-Day 8: Introduction to CSS
-
-• Topics Covered: What is CSS? How to link CSS to HTML.
-
-• Activities: Styled my HTML page with basic CSS.
-
-Day 9: CSS Selectors
-
-• Topics Covered: Different types of selectors (class, ID, element).
-
-• Activities: Experimented with various selectors to style elements differently.
-Day 10: Box Model
-
-• Topics Covered: Understanding margins, borders, padding, and content.
-
-• Activities: Adjusted the layout of my page using the box model.
-
-Day 11: Flexbox
-
-• Topics Covered: Introduction to Flexbox for layout design.
-
-• Activities: Created a responsive navigation bar using Flexbox.
-
-• Reflection: Flexbox simplifies complex layouts; I need more practice.
-
-Day 12: CSS Grid
-
-• Topics Covered: Introduction to CSS Grid for two-dimensional layouts.
-
-• Activities: Built a grid layout for my portfolio page.
-Week 3: Php Basics
-. Installation
-
-To get started with PHP, you need to have a server environment. You can set up PHP on your local machine using software stacks like:
-
-• XAMPP: Includes Apache, MySQL, and PHP.
-
-• MAMP: Mac-specific, includes Apache, MySQL, and PHP.
-
-• WAMP: Windows-specific, includes Apache, MySQL, and PHP.
-
-. Basic Syntax
-
-• PHP code is embedded in HTML using the <?php ... ?> tags.
-  
-<?php
-echo "Hello, World!";
-?>
-
-
-• The echo statement is used to output text to the browser.
-
-3. Variables
-
-• Variables in PHP start with the $ sign followed by the variable name.
-
-$name = "John";
-$age = 30;
-echo "My name is $name and I am $age years old.";
-4. Data Types
-
-PHP supports several data types:
-
-• String: Text enclosed in quotes.
-
-• Integer: Whole numbers.
-
-• Float: Decimal numbers.
-
-• Boolean: true or false.
-
-• Array: A collection of values.
-
-• Object: An instance of a class.
-
-• NULL: A variable with no value.
-
-5. Control Structures
-
-Conditional Statements
-
-if ($age >= 18) {
-    echo "You are an adult.";
-} else {
-    echo "You are a minor.";
-}
-Loops
-
-• For Loop
-
-for ($i = 0; $i < 5; $i++) {
-    echo $i;
-}
-
-
-• While Loop
-
-$i = 0;
-while ($i < 5) {
-    echo $i;
-    $i++;
-}
-week-4
-6. Functions
-
-Functions are reusable blocks of code. You can define a function using the function keyword.
-
-function greet($name) {
-    return "Hello, $name!";
-}
-
-echo greet("Alice");
-
-
-7. Arrays
-
-PHP supports both indexed and associative arrays.
-
-Indexed Array
-
-$fruits = array("Apple", "Banana", "Cherry");
-echo $fruits[1]; // Outputs: Banana
-
-
-Associative Array
-$person = array("name" => "John", "age" => 30);
-echo $person["name"]; // Outputs: John
-
-
-8. Superglobals
-
-PHP has several built-in superglobal arrays that are accessible from any scope:
-
-• $_GET: Used to collect data sent in the URL query string.
-Start with project
-
-• $_POST: Used to collect data sent via HTTP POST method.
-
-• $_SESSION: Used to store session variables.
-
-• $_COOKIE: Used to retrieve cookie variables.
-
-9. File Handling
-
-PHP provides functions to handle files, such as reading from and writing to files.
-
-$file = fopen("example.txt", "w");
-fwrite($file, "Hello, World!");
-fclose($file);
-
-
-10. Database Interaction
-
-PHP often interacts with databases using extensions like MySQLi or PDO.
-
-$mysqli = new mysqli("localhost", "user", "password", "database");
- #Check connection
-if ($mysqli->connect_error) {
-    die("Connection failed: " . $mysqli->connect_error);
-}
-
-$result = $mysqli->query("SELECT * FROM users");
-while ($row = $result->fetch_assoc()) {
-    echo $row['username'];
-}
-$mysqli->close();
- Continue with project Working
- LOGIN PHP
- ?php
-include 'inc/header.php';
-
-$info = "";
-
-
-if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = md5($_POST['password']);
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username and password= :password");
-    $stmt->bindParam(':username', $username);
-    $stmt->bindParam(':password', $password);
-    $stmt->execute();
-    $stmt->rowCount();
-
-    if ($stmt->rowCount() > 0) {
-      $user = $stmt->fetch(PDO::FETCH_ASSOC);
-      $_SESSION['username'] = $user['username'];
-      $_SESSION['role'] = $user['role'];
-
-      echo "<script>alert('Logged In'); window.location='admin-dashboard/index.php'; </script>";
-    } else {
-      $info = "Invalid User";
-    }
  
-}
 
 
-?>
-</div>
-<!-- end hero area -->
 
-<!-- contact section -->
 
-<section class="contact_section layout_padding">
-
-  <div class="container container-bg1">
-    <div class="row">
-      <div class="col-lg-4"></div>
-      <div class="col-md-6 col-lg-5 px-0">
-        <h2>
-          Login
-        </h2>
-        <form action="" method="post">
-          <?php echo $info; ?>
-          <div>
-            <input type="text" class="form-control" name="username" placeholder="User Name" required>
-          </div>
-          <div>
-            <input type="password" class="form-control" name="password" placeholder="Password" required>
-          </div>
-          
-          <div class="d-flex ">
-            <button type="submit" name="submit">
-              LOGIN
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- end contact section -->
-
-<!-- info section -->
-<?php
-include 'inc/footer.php';
-?>
-DATABASE USED FOR GIFTOS WINIPEG
-CREATE TABLE `about_web` (
-  `id` int(11) NOT NULL,
-  `title` varchar(100) DEFAULT NULL,
-  `description` varchar(1000) DEFAULT NULL,
-  `phone` varchar(20) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `about_web`
---
-
-INSERT INTO `about_web` (`id`, `title`, `description`, `phone`, `email`) VALUES
-(2, 'Welcome to our gifto website', 'Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.', '1234567899', 'gifto@gmail.com');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `categories`
---
-
-CREATE TABLE `categories` (
-  `category_id` int(11) DEFAULT NULL,
-  `category_name` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `categories`
---
-
-INSERT INTO `categories` (`category_id`, `category_name`) VALUES
-(1, 'Mens'),
-(2, 'Womens'),
-(3, 'Kids'),
-(4, 'New Arrival');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `giftositems`
---
-
-CREATE TABLE `giftositems` (
-  `giftos_item_id` int(11) DEFAULT NULL,
-  `itemname` varchar(255) DEFAULT NULL,
-  `description` varchar(1000) DEFAULT NULL,
-  `price` int(11) DEFAULT NULL,
-  `category` varchar(255) DEFAULT NULL,
-  `slug` varchar(255) DEFAULT NULL,
-  `created_dt` date DEFAULT NULL,
-  `updated_dt` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 
